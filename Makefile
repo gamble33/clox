@@ -1,5 +1,5 @@
 CC=gcc
-flags=-g -Wall -lm -ldl -fPIC -rdynamic
+flags=-g -Wall -lm -ldl -fPIC -rdynamic -g
 exec=a.out
 sources=$(wildcard src/*.c)
 objects=$(sources:.c=.o)
