@@ -2,6 +2,7 @@
 #define CLOX_VM_H 
 
 #include "chunk.h"
+#include "table.h"
 #include "value.h"
 
 #define STACK_MAX 256
@@ -11,6 +12,7 @@ typedef struct {
   uint8_t* ip; // Instruction Pointer
   Value stack[256];
   Value* stackTop;
+  Table strings;
   Obj* objects;
 } VM;
 
